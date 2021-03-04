@@ -22,3 +22,19 @@ class Counter extends React.Component {
 }
 
 export default Counter
+
+//Now let's make it functional!!!
+
+function FunctionalCounter () {
+  // Step 1: Add state for count
+  return (
+    <>
+      {/* Step 4: decrement count */}
+      <button>-</button>
+      {/* Step 2: display count */}
+      <h1></h1>
+      {/* Step 5increment count */}
+      <button>+</button>
+    </>
+  )
+}
