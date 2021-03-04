@@ -36,4 +36,21 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter
+export default FCounter
+
+//Now let's make it functional!!!
+
+function FCounter () {
+  // Step 1: Add state for count
+  const [count, setCount] = React.useState(0)
+  return (
+    <>
+      {/* Step 4: decrement count */}
+      <button onClick={() => setCount(count - 1)}>-</button>
+      {/* Step 2: display count */}
+      <h1>{count}</h1>
+      {/* Step 5increment count */}
+      <button onClick={() => setCount(count + 1)}>+</button>
+    </>
+  )
+}
